@@ -1,0 +1,1260 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys#"
+     xml:base="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys">
+        <rdfs:comment>@Author:
+Alexander Vargas Pierola</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:comment>Relates a flight survey to the airline associated with it.</rdfs:comment>
+        <rdfs:label>has Airline</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:label>has Comment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:comment>Relates a flight survey to the details of the flight it pertains to.</rdfs:comment>
+        <rdfs:label>has Flight Details</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:label>has Flight Duration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:label>has Flight Frequency</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:comment>Relates a flight survey to the passenger who participated in it.</rdfs:comment>
+        <rdfs:label>has Passenger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The type or model of the aircraft used for the flight.</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the service provided by the cabin staff.</rdfs:comment>
+        <rdfs:label>Cabin Staff Service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The detailed comment provided by the passenger about their flight experience.</rdfs:comment>
+        <rdfs:label>Comment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The title of the passenger&apos;s comment about their flight experience.</rdfs:comment>
+        <rdfs:label>Comment Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The date when the flight was taken or flown.</rdfs:comment>
+        <rdfs:label>Date Flown</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>The date when the flight survey was published or made available.</rdfs:comment>
+        <rdfs:label>Date Published</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The arrival location or destination of the flight.</rdfs:comment>
+        <rdfs:label>Destination</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the quality of food and beverages provided during the flight.</rdfs:comment>
+        <rdfs:label>Food And Beverages</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the ground services provided at the airport.</rdfs:comment>
+        <rdfs:label>Ground Service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the quality of inflight entertainment options.</rdfs:comment>
+        <rdfs:label>Inflight Entertainment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The departure location or origin of the flight.</rdfs:comment>
+        <rdfs:label>Origin</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>The overall rating or score given by the passenger for their flight experience.</rdfs:comment>
+        <rdfs:label>Overall Rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The country of origin of the passenger.</rdfs:comment>
+        <rdfs:label>Passenger Country</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>no</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>yes</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Indicates whether the passenger would recommend the airline or flight to others</rdfs:comment>
+        <rdfs:label>Recommended</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the comfort of the seating arrangement.</rdfs:comment>
+        <rdfs:label>Seat Comfort</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The type or class of seating arrangement on the flight, for example economy, business, etc.</rdfs:comment>
+        <rdfs:label>Seat Type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indicates whether the trip details have been verified by the passenger.</rdfs:comment>
+        <rdfs:label>Trip Verified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>The type or category of the passenger, for example business traveler, leisure traveler, etc.</rdfs:comment>
+        <rdfs:label>Type Of Traveller</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>The rating or score given by the passenger for the perceived value for money of the flight experience.</rdfs:comment>
+        <rdfs:label>Value For Money</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>The rating or score given by the passenger for the quality of Wi-Fi and connectivity services were available during the flight.</rdfs:label>
+        <rdfs:label>Wifi And Connectivity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline">
+        <rdfs:comment>Represents an airline company providing flight services to passengers.</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from passengers about their experience upon arrival at the destination airport, including customs, immigration, and ground transportation.</rdfs:comment>
+        <rdfs:label>Arrival Experience Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from passengers about their experience at the baggage claim area, including the efficiency and convenience of baggage retrieval.</rdfs:comment>
+        <rdfs:label>Baggage Claim Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger"/>
+        <rdfs:comment>Represents a passenger traveling in the basic or standard economy class cabin of an aircraft, offering essential amenities and services at a lower cost.</rdfs:comment>
+        <rdfs:label>Basic Economy Class Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:comment>Represents a passenger who travels in the business class cabin of an aircraft, normally offering enhanced amenities and services compared to economy class.</rdfs:comment>
+        <rdfs:label>Business Class Passenger</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/Business_class</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey"/>
+        <rdfs:comment>Represents a survey conducted to gather feedback from airline crew members about their job satisfaction, working conditions, and overall experience in their roles.</rdfs:comment>
+        <rdfs:label>Crew Satisfaction Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from customers about their experience with a product or service.</rdfs:comment>
+        <rdfs:label>Customer Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:comment>Represents a flight that operates within the borders of a single country, without crossing international boundaries.</rdfs:comment>
+        <rdfs:label>Domestic Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight"/>
+        <rdfs:comment>Represents a long-haul flight operating within a country or region, covering extensive distances.</rdfs:comment>
+        <rdfs:label>Domestic Long Haul Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline"/>
+        <rdfs:comment>Represents a regional airline specializing in offering flight services within a specific country or region.</rdfs:comment>
+        <rdfs:label>Domestic Regional Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:comment>Represents a passenger who travels in the economy class cabin of an aircraft, normally offering standard amenities and services.</rdfs:comment>
+        <rdfs:label>Economy Class Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+        <rdfs:comment>Represents a frequent flyer with elite status in an airline&apos;s loyalty program, enjoying exclusive benefits, privileges, and rewards.</rdfs:comment>
+        <rdfs:label>Elite Frequent Flyer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from employees about their job satisfaction, work environment, and other related aspects.</rdfs:comment>
+        <rdfs:label>Employee Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey"/>
+        <rdfs:comment>Represents a survey designed to gather feedback from customers about their overall experience, including interactions, perceptions, and sentiments.</rdfs:comment>
+        <rdfs:label>Experience Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler"/>
+        <rdfs:comment>Represents a leisure traveler who travels with family members for vacation, holidays, or recreational activities, often seeking family-friendly travel options.</rdfs:comment>
+        <rdfs:label>Family Leisure Traveler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails">
+        <rdfs:comment>Represents the specific details of a flight, including its route, duration, and the main information.</rdfs:comment>
+        <rdfs:label>Flight Details</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Represents a survey used to gather feedback from different people about their flight experience.</rdfs:comment>
+        <rdfs:label>Flight Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:comment>Represents a passenger who frequently travels by air and may be enrolled in a loyalty program offered by an airline.</rdfs:comment>
+        <rdfs:label>Frequent Flyer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline"/>
+        <rdfs:comment>Represents an international airline company that offers comprehensive flight services, including various cabin classes, amenities, and customer services.</rdfs:comment>
+        <rdfs:label>Full Service International Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey"/>
+        <rdfs:comment>Ground Staff Survey</rdfs:comment>
+        <rdfs:comment>Represents a survey used to gather feedback from ground staff employees, such as airport personnel and support staff, about their job satisfaction and work environment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline"/>
+        <rdfs:comment>Represents an international airline company that combines elements of both full-service and low-cost carriers, providing a mix of amenities and services.</rdfs:comment>
+        <rdfs:label>Hybrid International Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from passengers about their experience with immigration procedures and processes upon arrival at an international destination.</rdfs:comment>
+        <rdfs:label>Immigration Process Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:comment>Represents an airline company that operates flights primarily between different countries or regions.</rdfs:comment>
+        <rdfs:label>International Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:comment>Represents a flight that operates between different countries or across international boundaries.</rdfs:comment>
+        <rdfs:label>International Flight</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/International_flight</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight"/>
+        <rdfs:comment>Represents a long-haul flight operating between countries or regions, covering extensive distances.</rdfs:comment>
+        <rdfs:label>International Long Haul Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline"/>
+        <rdfs:comment>Represents a regional airline providing flight services to international destinations within a specific geographical region.</rdfs:comment>
+        <rdfs:label>International Regional Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+        <rdfs:comment>Represents a passenger who travels for leisure purposes, such as vacations, holidays, or recreational activities.</rdfs:comment>
+        <rdfs:label>Leisure Traveler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight"/>
+        <rdfs:comment>Represents a domestic flight with a relatively long duration, normally covering extensive distances within a country or region.</rdfs:comment>
+        <rdfs:label>Long Domestic Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"/>
+        <rdfs:comment>Represents a flight with a relatively long duration, normally more than seven hours and covering extensive distances, often between continents.</rdfs:comment>
+        <rdfs:label>Long Haul Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight"/>
+        <rdfs:comment>Represents an international flight with a relatively long duration, normally covering extensive distances between countries or regions.</rdfs:comment>
+        <rdfs:label>Long International Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:comment>Represents an airline company that offers low-cost flight services, normally with fewer amenities and services compared to traditional airlines.</rdfs:comment>
+        <rdfs:label>Low Cost Carrier</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/Low-cost_carrier</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey"/>
+        <rdfs:comment>Represents a survey aimed at assessing the loyalty, retention, and engagement of customers towards a brand, company, or organization.</rdfs:comment>
+        <rdfs:label>Loyalty Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey"/>
+        <rdfs:comment>Represents a survey used to gather feedback from maintenance staff employees, such as aircraft technicians and engineers, about their job satisfaction and work conditions.</rdfs:comment>
+        <rdfs:label>Maintenance Staff Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger">
+        <rdfs:comment>It represents a traveler taking a flight operated by an airline.</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger"/>
+        <rdfs:comment>Represents a passenger traveling in the plus or upgraded economy class cabin of an aircraft, offering additional amenities and services compared to standard economy class.</rdfs:comment>
+        <rdfs:label>Plus Economy Class Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"/>
+        <rdfs:comment>Represents a more specific survey used to gather feedback from passengers about their experience after completing a flight, including arrival procedures and baggage claim.</rdfs:comment>
+        <rdfs:label>Post Flight Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger"/>
+        <rdfs:comment>Represents a passenger traveling in the premium or upgraded business class cabin of an aircraft, offering enhanced amenities, services, and comfort.</rdfs:comment>
+        <rdfs:label>Premium Business Class Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+        <rdfs:comment>Represents an airline company that operates flights within a specific geographical region, often connecting smaller cities and towns.</rdfs:comment>
+        <rdfs:label>Regional Airline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier"/>
+        <rdfs:comment>Represents a low-cost carrier focusing on providing affordable flight services within a specific region or country.</rdfs:comment>
+        <rdfs:label>Regional Low Cost Carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey"/>
+        <rdfs:comment>Represents a survey focused on measuring the level of satisfaction or contentment of customers about the flight service.</rdfs:comment>
+        <rdfs:label>Satisfaction Survey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight"/>
+        <rdfs:comment>Represents a domestic flight with a relatively short duration, normally covering distances within a certain range.</rdfs:comment>
+        <rdfs:label>Short Domestic Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight"/>
+        <rdfs:comment>Represents an international flight with a relatively short duration, normally covering distances within a certain range between countries or regions.</rdfs:comment>
+        <rdfs:label>Short International Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler"/>
+        <rdfs:comment>Represents a leisure traveler who travels alone for personal enjoyment, relaxation, or exploration, seeking travel experiences tailored to individual preferences.</rdfs:comment>
+        <rdfs:label>Solo Leisure Traveler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger"/>
+        <rdfs:comment>Represents a passenger traveling in the standard business class cabin of an aircraft, offering typical amenities and services for business-class passengers.</rdfs:comment>
+        <rdfs:label>Standard Business Class Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+        <rdfs:comment>Represents a frequent flyer enrolled in an airline&apos;s loyalty program, earning rewards and benefits based on their travel activity.</rdfs:comment>
+        <rdfs:label>Standard Frequent Flyer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier"/>
+        <rdfs:comment>Represents an airline company offering extremely budget-friendly flight services with minimal amenities and additional charges.</rdfs:comment>
+        <rdfs:label>Ultra Low Cost Carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger"/>
+        <rdfs:comment>Instance for &apos;Business Class Passenger&apos;</rdfs:comment>
+        <rdfs:label>Business Class Passenger Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey"/>
+        <rdfs:comment>Instance for &apos;Customer Survey&apos;</rdfs:comment>
+        <rdfs:label>Customer Survey Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight"/>
+        <rdfs:comment>Instance for &apos;Domestic Flight&apos;</rdfs:comment>
+        <rdfs:label>Domestic Flight Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+        <rdfs:comment>Instance for &apos;Frequent Flyer&apos;</rdfs:comment>
+        <rdfs:label>Frequent Flyer Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight"/>
+        <rdfs:comment>Instance for &apos;International Flight&apos;</rdfs:comment>
+        <rdfs:label>International Flight Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight"/>
+        <rdfs:comment>Instance for &apos;Long Haul Flight&apos;</rdfs:comment>
+        <rdfs:label>Long Haul Flight Instance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#flight">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#duration">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#passenger">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#frequency">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#flight"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#flight"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#duration"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#duration"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#flight"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#frequency"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl:var#frequency"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#passenger"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

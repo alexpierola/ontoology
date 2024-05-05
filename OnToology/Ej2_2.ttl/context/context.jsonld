@@ -1,0 +1,256 @@
+{
+  "@context" : {
+    "LeisureTraveler" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler"
+    },
+    "DomesticFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight"
+    },
+    "TypeOfTraveller" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FullServiceInternationalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline"
+    },
+    "InternationalRegionalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline"
+    },
+    "Comment" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StandardBusinessClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger"
+    },
+    "Recommended" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended"
+    },
+    "EconomyClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger"
+    },
+    "FrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "PassengerCountry" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ShortInternationalFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight"
+    },
+    "ExperienceSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey"
+    },
+    "DatePublished" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasComment" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment",
+      "@type" : "@id"
+    },
+    "SatisfactionSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey"
+    },
+    "InternationalFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "InternationalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline"
+    },
+    "OverallRating" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating"
+    },
+    "Destination" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EmployeeSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey"
+    },
+    "DomesticRegionalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline"
+    },
+    "Origin" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ValueForMoney" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "DateFlown" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "InflightEntertainment" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "UltraLowCostCarrier" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier"
+    },
+    "CabinStaffService" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "SoloLeisureTraveler" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler"
+    },
+    "RegionalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline"
+    },
+    "LoyaltySurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey"
+    },
+    "LongHaulFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight"
+    },
+    "StandardFrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer"
+    },
+    "InternationalLongHaulFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight"
+    },
+    "MaintenanceStaffSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey"
+    },
+    "ImmigrationProcessSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey"
+    },
+    "BaggageClaimSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey"
+    },
+    "HybridInternationalAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger"
+    },
+    "EliteFrequentFlyer" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer"
+    },
+    "SeatComfort" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PlusEconomyClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger"
+    },
+    "LowCostCarrier" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CrewSatisfactionSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey"
+    },
+    "PremiumBusinessClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger"
+    },
+    "RegionalLowCostCarrier" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier"
+    },
+    "hasFlightDetails" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails",
+      "@type" : "@id"
+    },
+    "GroundStaffSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey"
+    },
+    "TripVerified" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DomesticLongHaulFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight"
+    },
+    "FlightSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline"
+    },
+    "WifiAndConnectivity" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "FlightDetails" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails"
+    },
+    "ArrivalExperienceSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey"
+    },
+    "hasAirline" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline",
+      "@type" : "@id"
+    },
+    "CustomerSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey"
+    },
+    "hasFlightDuration" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "PostFlightSurvey" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "LongDomesticFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight"
+    },
+    "BusinessClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger"
+    },
+    "CommentTitle" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "LongInternationalFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight"
+    },
+    "ShortDomesticFlight" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight"
+    },
+    "FamilyLeisureTraveler" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler"
+    },
+    "BasicEconomyClassPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger"
+    },
+    "hasFlightFrequency" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency",
+      "@type" : "@id"
+    },
+    "SeatType" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FoodAndBeverages" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasPassenger" : {
+      "@id" : "http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger",
+      "@type" : "@id"
+    }
+  }
+}

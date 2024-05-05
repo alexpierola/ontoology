@@ -1,0 +1,709 @@
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys> <http://www.w3.org/2000/01/rdf-schema#comment> "@Author:\nAlexander Vargas Pierola" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight survey to the airline associated with it." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> <http://www.w3.org/2000/01/rdf-schema#label> "has Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasComment> <http://www.w3.org/2000/01/rdf-schema#label> "has Comment" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight survey to the details of the flight it pertains to." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> <http://www.w3.org/2000/01/rdf-schema#label> "has Flight Details" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration> <http://www.w3.org/2000/01/rdf-schema#label> "has Flight Duration" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency> <http://www.w3.org/2000/01/rdf-schema#label> "has Flight Frequency" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a flight survey to the passenger who participated in it." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "has Passenger" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or model of the aircraft used for the flight." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the service provided by the cabin staff." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CabinStaffService> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin Staff Service" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/2000/01/rdf-schema#comment> "The detailed comment provided by the passenger about their flight experience." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Comment> <http://www.w3.org/2000/01/rdf-schema#label> "Comment" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of the passenger's comment about their flight experience." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CommentTitle> <http://www.w3.org/2000/01/rdf-schema#label> "Comment Title" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the flight was taken or flown." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "Date Flown" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when the flight survey was published or made available." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "Date Published" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "The arrival location or destination of the flight." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the quality of food and beverages provided during the flight." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Food And Beverages" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the ground services provided at the airport." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "Ground Service" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the quality of inflight entertainment options." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InflightEntertainment> <http://www.w3.org/2000/01/rdf-schema#label> "Inflight Entertainment" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "The departure location or origin of the flight." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating or score given by the passenger for their flight experience." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/OverallRating> <http://www.w3.org/2000/01/rdf-schema#label> "Overall Rating" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The country of origin of the passenger." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PassengerCountry> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger Country" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the passenger would recommend the airline or flight to others" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the comfort of the seating arrangement." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatComfort> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Comfort" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or class of seating arrangement on the flight, for example economy, business, etc." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "Seat Type" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the trip details have been verified by the passenger." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TripVerified> <http://www.w3.org/2000/01/rdf-schema#label> "Trip Verified" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "The type or category of the passenger, for example business traveler, leisure traveler, etc." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "Type Of Traveller" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating or score given by the passenger for the perceived value for money of the flight experience." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ValueForMoney> <http://www.w3.org/2000/01/rdf-schema#label> "Value For Money" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#label> "The rating or score given by the passenger for the quality of Wi-Fi and connectivity services were available during the flight." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi And Connectivity" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company providing flight services to passengers." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from passengers about their experience upon arrival at the destination airport, including customs, immigration, and ground transportation." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ArrivalExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Arrival Experience Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from passengers about their experience at the baggage claim area, including the efficiency and convenience of baggage retrieval." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BaggageClaimSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Baggage Claim Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger traveling in the basic or standard economy class cabin of an aircraft, offering essential amenities and services at a lower cost." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BasicEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Economy Class Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger who travels in the business class cabin of an aircraft, normally offering enhanced amenities and services compared to economy class." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class Passenger" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Business_class" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey conducted to gather feedback from airline crew members about their job satisfaction, working conditions, and overall experience in their roles." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CrewSatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Crew Satisfaction Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from customers about their experience with a product or service." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a flight that operates within the borders of a single country, without crossing international boundaries." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Domestic Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a long-haul flight operating within a country or region, covering extensive distances." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Domestic Long Haul Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a regional airline specializing in offering flight services within a specific country or region." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Domestic Regional Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger who travels in the economy class cabin of an aircraft, normally offering standard amenities and services." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Class Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a frequent flyer with elite status in an airline's loyalty program, enjoying exclusive benefits, privileges, and rewards." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EliteFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "Elite Frequent Flyer" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from employees about their job satisfaction, work environment, and other related aspects." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Employee Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey designed to gather feedback from customers about their overall experience, including interactions, perceptions, and sentiments." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ExperienceSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Experience Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a leisure traveler who travels with family members for vacation, holidays, or recreational activities, often seeking family-friendly travel options." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FamilyLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "Family Leisure Traveler" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the specific details of a flight, including its route, duration, and the main information." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Details" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasAirline> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasPassenger> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+_:genid11 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDetails> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from different people about their flight experience." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Flight Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger who frequently travels by air and may be enrolled in a loyalty program offered by an airline." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "Frequent Flyer" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an international airline company that offers comprehensive flight services, including various cabin classes, amenities, and customer services." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FullServiceInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Full Service International Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Ground Staff Survey" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/GroundStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from ground staff employees, such as airport personnel and support staff, about their job satisfaction and work environment." .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an international airline company that combines elements of both full-service and low-cost carriers, providing a mix of amenities and services." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/HybridInternationalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Hybrid International Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from passengers about their experience with immigration procedures and processes upon arrival at an international destination." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ImmigrationProcessSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Immigration Process Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company that operates flights primarily between different countries or regions." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "International Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a flight that operates between different countries or across international boundaries." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> <http://www.w3.org/2000/01/rdf-schema#label> "International Flight" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/International_flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a long-haul flight operating between countries or regions, covering extensive distances." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalLongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#label> "International Long Haul Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a regional airline providing flight services to international destinations within a specific geographical region." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalRegionalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "International Regional Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger who travels for leisure purposes, such as vacations, holidays, or recreational activities." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "Leisure Traveler" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a domestic flight with a relatively long duration, normally covering extensive distances within a country or region." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Long Domestic Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Airline> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a flight with a relatively long duration, normally more than seven hours and covering extensive distances, often between continents." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Long Haul Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an international flight with a relatively long duration, normally covering extensive distances between countries or regions." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Long International Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company that offers low-cost flight services, normally with fewer amenities and services compared to traditional airlines." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Low Cost Carrier" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Low-cost_carrier" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey aimed at assessing the loyalty, retention, and engagement of customers towards a brand, company, or organization." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LoyaltySurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Loyalty Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EmployeeSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey used to gather feedback from maintenance staff employees, such as aircraft technicians and engineers, about their job satisfaction and work conditions." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/MaintenanceStaffSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Staff Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "It represents a traveler taking a flight operated by an airline." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/EconomyClassPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger traveling in the plus or upgraded economy class cabin of an aircraft, offering additional amenities and services compared to standard economy class." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PlusEconomyClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Plus Economy Class Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a more specific survey used to gather feedback from passengers about their experience after completing a flight, including arrival procedures and baggage claim." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PostFlightSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Post Flight Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger traveling in the premium or upgraded business class cabin of an aircraft, offering enhanced amenities, services, and comfort." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/PremiumBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Premium Business Class Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company that operates flights within a specific geographical region, often connecting smaller cities and towns." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalAirline> <http://www.w3.org/2000/01/rdf-schema#label> "Regional Airline" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a low-cost carrier focusing on providing affordable flight services within a specific region or country." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/RegionalLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Regional Low Cost Carrier" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a survey focused on measuring the level of satisfaction or contentment of customers about the flight service." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SatisfactionSurvey> <http://www.w3.org/2000/01/rdf-schema#label> "Satisfaction Survey" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a domestic flight with a relatively short duration, normally covering distances within a certain range." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortDomesticFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Short Domestic Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an international flight with a relatively short duration, normally covering distances within a certain range between countries or regions." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/ShortInternationalFlight> <http://www.w3.org/2000/01/rdf-schema#label> "Short International Flight" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LeisureTraveler> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a leisure traveler who travels alone for personal enjoyment, relaxation, or exploration, seeking travel experiences tailored to individual preferences." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/SoloLeisureTraveler> <http://www.w3.org/2000/01/rdf-schema#label> "Solo Leisure Traveler" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a passenger traveling in the standard business class cabin of an aircraft, offering typical amenities and services for business-class passengers." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardBusinessClassPassenger> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Business Class Passenger" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a frequent flyer enrolled in an airline's loyalty program, earning rewards and benefits based on their travel activity." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/StandardFrequentFlyer> <http://www.w3.org/2000/01/rdf-schema#label> "Standard Frequent Flyer" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LowCostCarrier> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an airline company offering extremely budget-friendly flight services with minimal amenities and additional charges." .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/UltraLowCostCarrier> <http://www.w3.org/2000/01/rdf-schema#label> "Ultra Low Cost Carrier" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'Business Class Passenger'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassengerInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Business Class Passenger Instance" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurvey> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'Customer Survey'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/CustomerSurveyIntance> <http://www.w3.org/2000/01/rdf-schema#label> "Customer Survey Instance" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'Domestic Flight'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/DomesticFlightInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Domestic Flight Instance" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'Frequent Flyer'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyerInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Frequent Flyer Instance" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'International Flight'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/InternationalFlightInstance> <http://www.w3.org/2000/01/rdf-schema#label> "International Flight Instance" .
+# 
+# http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for 'Long Haul Flight'" .
+<http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlightInstance> <http://www.w3.org/2000/01/rdf-schema#label> "Long Haul Flight Instance" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid12 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#arguments> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#duration> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#duration> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#flight> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightDuration> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#flight> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FlightDetails> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid12 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#flight> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/LongHaulFlight> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid30 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#arguments> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#frequency> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#frequency> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/hasFlightFrequency> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/FrequentFlyer> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/Passenger> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#passenger> .
+_:genid42 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/alex/ontologies/2024/4/Flight_Satisfaction_Surveys/BusinessClassPassenger> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
