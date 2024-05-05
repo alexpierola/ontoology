@@ -1,0 +1,48 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:BusinessClassPassenger" "base:Passenger" "base:FullServiceInternationalAirline" "base:ExperienceSurvey" "base:ArrivalExperienceSurvey" "base:StandardBusinessClassPassenger" "base:PlusEconomyClassPassenger" "base:InternationalAirline" "base:BaggageClaimSurvey" "base:FrequentFlyer" "base:CustomerSurvey" "base:EliteFrequentFlyer" "base:InternationalRegionalAirline" "base:DomesticLongHaulFlight" "base:InternationalFlight" "base:InternationalLongHaulFlight" "base:FlightSurvey" "base:DomesticRegionalAirline" "base:ImmigrationProcessSurvey" "base:ShortDomesticFlight" "base:LeisureTraveler" "base:LongInternationalFlight" "base:FamilyLeisureTraveler" "base:DomesticFlight" "base:HybridInternationalAirline" "base:PostFlightSurvey" "base:CrewSatisfactionSurvey" "base:RegionalLowCostCarrier" "base:BasicEconomyClassPassenger" "base:RegionalAirline" "base:FlightDetails" "base:PremiumBusinessClassPassenger" "base:LongDomesticFlight" "base:UltraLowCostCarrier" "base:ShortInternationalFlight" "base:StandardFrequentFlyer" "base:SatisfactionSurvey" "base:LoyaltySurvey" "base:GroundStaffSurvey" "base:SoloLeisureTraveler" "base:MaintenanceStaffSurvey" "base:EmployeeSurvey" "base:Airline" "base:LowCostCarrier" "base:EconomyClassPassenger" "base:LongHaulFlight" ; /*classes style*/
+	"base:GroundStaffSurvey" -> "base:EmployeeSurvey" [ label = "rdfs:subClassOf" ];
+	"base:StandardFrequentFlyer" -> "base:FrequentFlyer" [ label = "rdfs:subClassOf" ];
+	"base:SoloLeisureTraveler" -> "base:LeisureTraveler" [ label = "rdfs:subClassOf" ];
+	"base:LowCostCarrier" -> "base:FlightDetails" [ label = "rdfs:subClassOf" ];
+	"base:EliteFrequentFlyer" -> "base:FrequentFlyer" [ label = "rdfs:subClassOf" ];
+	"base:LeisureTraveler" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:LoyaltySurvey" -> "base:CustomerSurvey" [ label = "rdfs:subClassOf" ];
+	"base:MaintenanceStaffSurvey" -> "base:EmployeeSurvey" [ label = "rdfs:subClassOf" ];
+	"base:InternationalFlight" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:DomesticFlight" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:RegionalLowCostCarrier" -> "base:LowCostCarrier" [ label = "rdfs:subClassOf" ];
+	"base:InternationalAirline" -> "base:FlightDetails" [ label = "rdfs:subClassOf" ];
+	"base:ShortDomesticFlight" -> "base:DomesticFlight" [ label = "rdfs:subClassOf" ];
+	"base:EmployeeSurvey" -> "base:FlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:SatisfactionSurvey" -> "base:CustomerSurvey" [ label = "rdfs:subClassOf" ];
+	"base:UltraLowCostCarrier" -> "base:LowCostCarrier" [ label = "rdfs:subClassOf" ];
+	"base:BasicEconomyClassPassenger" -> "base:EconomyClassPassenger" [ label = "rdfs:subClassOf" ];
+	"base:PremiumBusinessClassPassenger" -> "base:BusinessClassPassenger" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClassPassenger" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:InternationalRegionalAirline" -> "base:RegionalAirline" [ label = "rdfs:subClassOf" ];
+	"base:DomesticRegionalAirline" -> "base:RegionalAirline" [ label = "rdfs:subClassOf" ];
+	"base:BaggageClaimSurvey" -> "base:PostFlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:CrewSatisfactionSurvey" -> "base:EmployeeSurvey" [ label = "rdfs:subClassOf" ];
+	"base:InternationalLongHaulFlight" -> "base:LongHaulFlight" [ label = "rdfs:subClassOf" ];
+	"base:LongDomesticFlight" -> "base:DomesticFlight" [ label = "rdfs:subClassOf" ];
+	"base:LongInternationalFlight" -> "base:InternationalFlight" [ label = "rdfs:subClassOf" ];
+	"base:PlusEconomyClassPassenger" -> "base:EconomyClassPassenger" [ label = "rdfs:subClassOf" ];
+	"base:DomesticLongHaulFlight" -> "base:LongHaulFlight" [ label = "rdfs:subClassOf" ];
+	"base:CustomerSurvey" -> "base:FlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:FamilyLeisureTraveler" -> "base:LeisureTraveler" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClassPassenger" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:FullServiceInternationalAirline" -> "base:InternationalAirline" [ label = "rdfs:subClassOf" ];
+	"base:ImmigrationProcessSurvey" -> "base:PostFlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:ExperienceSurvey" -> "base:CustomerSurvey" [ label = "rdfs:subClassOf" ];
+	"base:ShortInternationalFlight" -> "base:InternationalFlight" [ label = "rdfs:subClassOf" ];
+	"base:PostFlightSurvey" -> "base:FlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:StandardBusinessClassPassenger" -> "base:BusinessClassPassenger" [ label = "rdfs:subClassOf" ];
+	"base:FrequentFlyer" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:ArrivalExperienceSurvey" -> "base:PostFlightSurvey" [ label = "rdfs:subClassOf" ];
+	"base:HybridInternationalAirline" -> "base:InternationalAirline" [ label = "rdfs:subClassOf" ];
+	"base:LongHaulFlight" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:RegionalAirline" -> "base:FlightDetails" [ label = "rdfs:subClassOf" ];
+
+}
